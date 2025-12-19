@@ -1,64 +1,57 @@
+#  Building a Secure, Decoupled AWS Web Application with RDS and Secrets Manager (From Scratch)
 
-# 🚀 Building a Secure, Decoupled AWS Web Application with RDS and Secrets Manager (From Scratch)
-
-## A Beginner-Friendly, End-to-End Cloud Architecture Project
+![Architecture Diagram](https://i.postimg.cc/W32LLrvB/ro-ARCH.png)
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Modern cloud applications are not built as one big system. Instead, they are designed using **decoupled architecture**, where each component has a clear responsibility, is securely isolated, and can scale independently.
-
-This project demonstrates how to build a **secure, real-world AWS architecture from scratch**, starting with networking and ending with a fully working web application connected to a managed database — **the same way enterprise teams do it**.
+This project demonstrates how to build a **secure, real-world AWS architecture from scratch**, starting with networking and ending with a fully working web application connected to a managed database - the same way enterprise teams do it.
 
 The goal of this project was to:
+Understand AWS networking fundamentals
+Build a custom Virtual Private Cloud (VPC)
+Securely deploy a web application
+Integrate a managed database (Amazon RDS)
+Protect credentials using AWS Secrets Manager
+Perform full CRUD (Create, Read, Update, Delete) operations
+Apply AWS best practices for security and architecture
 
-* Understand AWS networking fundamentals
-* Build a custom Virtual Private Cloud (VPC)
-* Securely deploy a web application
-* Integrate a managed database (Amazon RDS)
-* Protect credentials using AWS Secrets Manager
-* Perform full CRUD (Create, Read, Update, Delete) operations
-* Apply AWS best practices for security and architecture
-
-This project was intentionally built step by step, without shortcuts, to deeply understand **why each component exists and how they work together**.
+This project was intentionally built step by step, without shortcuts, to deeply understand why each component exists and how they work together.
 
 ---
 
 ## 🎯 Project Objectives
 
 The main objectives of this project were:
-
-* Build a **custom AWS VPC** from scratch
-* Create **public and private subnets**
-* Control internet access using **route tables and an Internet Gateway**
-* Deploy a **web application on EC2** in a public subnet
-* Deploy an **Amazon RDS MySQL database** in a private subnet
-* Secure communication using **security groups**
-* Store database credentials securely using **AWS Secrets Manager**
-* Connect the web application to the database securely
-* Perform and verify **CRUD operations**
-* Demonstrate a **production-style cloud architecture**
+  Build a **custom AWS VPC** from scratch
+  Create **public and private subnets**
+  Control internet access using **route tables and an Internet Gateway**
+  Deploy a **web application on EC2** in a public subnet
+  Deploy an **Amazon RDS MySQL database** in a private subnet
+  Secure communication using **security groups**
+  Store database credentials securely using **AWS Secrets Manager**
+  Connect the web application to the database securely
+  Perform and verify **CRUD operations**
+  Demonstrate a **production-style cloud architecture**
 
 ---
 
 ## 🧠 Key Architectural Concept: Decoupling
 
 Before building anything, it’s important to understand the idea of **decoupling**.
-
 In this project:
-
-* The **web application** does not store data itself
-* The **database** is separate and private
-* Credentials are not stored in code
-* Each component communicates only through approved paths
+  The **application** does not store data itself
+  The **database** is separate and private
+  Credentials are not stored in code
+  Each component communicates only through approved paths
 
 This approach improves:
-
-* Security
-* Scalability
-* Maintainability
-* Fault isolation
+Security
+Scalability
+Maintainability
+Fault isolation
 
 Decoupling is a core principle used in **enterprise cloud systems**.
 
